@@ -7,17 +7,25 @@ Diplaying Cards
 </div>
 
 Format of user
-{
-username: '',
-email:'',
-Password:'',
-Cart:[
-  [ProductId,Quantity]
-],
-OrderHistory:[
-  [[ProductId,Quantity]]
-]
-}
+const exampleUser = {
+  name: "John Doe",
+  email: "johndoe@example.com",
+  password: "hashed_password",
+  phoneNumber: "123-456-7890",
+  orderHistory: [
+    {
+      orderId: uuidv4(),
+      products: [
+        { productId: "prod1", quantity: 2 },
+        { productId: "prod2", quantity: 1 },
+      ],
+      orderDate: new Date().toISOString(),
+    },
+  ],
+  cart: [
+    { productId: "prod3", quantity: 1 },
+  ],
+};
 Format of Product
 {
   Name:'',
