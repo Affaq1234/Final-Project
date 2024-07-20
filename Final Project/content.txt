@@ -1,0 +1,29 @@
+Diplaying Cards
+
+<div class="flex flex-wrap gap-2 min-h-1 min-w-1">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+
+Format of user
+{
+username: '',
+email:'',
+Password:'',
+Cart:[
+  [ProductId,Quantity]
+],
+OrderHistory:[
+  [[ProductId,Quantity]]
+]
+}
+Format of Product
+{
+  Name:'',
+  Id:'',
+  Price:'',
+  DeliveryCharges:'',
+  Img:'',
+  Rating:'',
+}
